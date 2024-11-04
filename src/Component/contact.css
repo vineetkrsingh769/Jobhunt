@@ -1,0 +1,115 @@
+.c {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.c h1 {
+  color: #333; /* Darker color for better contrast */
+  text-align: center;
+  margin-bottom: 3rem; /* Reduced for better spacing */
+  font-size: 2.5rem; /* Larger font size for emphasis */
+  font-weight: bold;
+}
+
+.c-t {
+  margin: 0 2rem; /* Added uniform margin for better spacing */
+  padding: 2.5rem;
+  background-color: #ffffff; /* White background for a clean look */
+  border-radius: 10px; /* More rounded corners for a modern look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  width: 90%; /* More responsive width */
+  max-width: 700px; /* Maximum width to maintain structure */
+  margin-bottom: 6rem;
+  border: 1px solid #ccc; /* Light border for subtle definition */
+}
+
+.c-t form {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-t input,
+.c-t textarea {
+  width: 100%;
+  margin: 0.625rem 0;
+  padding: 0.75rem; /* Increased padding for better touch targets */
+  border: 1px solid #ddd;
+  border-radius: 5px; /* More rounded corners */
+  font-size: 1rem;
+  transition: border 0.3s; /* Smooth border transition */
+}
+
+.c-t input:focus,
+.c-t textarea:focus {
+  border: 1px solid #007BFF; /* Highlight border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.c-t textarea {
+  height: 150px; /* Fixed height for consistency */
+  resize: vertical; /* Allow vertical resizing only */
+}
+
+.btn5 {
+  border: none;
+  padding: 0.75rem;
+  background-color: rgb(255, 93, 34);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px; /* More rounded corners */
+  font-size: 1rem;
+  transition: background-color 0.3s; /* Smooth background color transition */
+  width: 100%; /* Full width for better usability */
+  max-width: 200px; /* Maximum width for button */
+  align-self: center; /* Center button within form */
+}
+
+.btn5:hover {
+  background-color: rgb(253, 114, 63); /* Hover effect */
+}
+
+@media screen and (max-width: 1024px) {
+  .c-t {
+    margin: 0 1rem; /* Reduced margin for smaller screens */
+    padding: 2rem; /* Adjusted padding */
+  }
+
+  .c h1 {
+    font-size: 2rem; /* Responsive font size */
+  }
+
+  .btn5 {
+    width: 100%; /* Full width for button */
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .c {
+    margin-top: 1rem; /* Reduced top margin */
+  }
+
+  .c h1 {
+    font-size: 1.5rem; /* Smaller font size */
+    margin-bottom: 1.5rem; /* Reduced bottom margin */
+  }
+
+  .c-t {
+    width: 95%; /* Wider on smaller screens */
+    padding: 1rem; /* Adjusted padding */
+  }
+
+  .c-t input,
+  .c-t textarea {
+    font-size: 0.9rem; /* Smaller font size for .c-t inputs */
+  }
+
+  .btn5 {
+    width: 100%; /* Full width button */
+    font-size: 0.85rem; /* Adjusted button font size */
+  }
+}

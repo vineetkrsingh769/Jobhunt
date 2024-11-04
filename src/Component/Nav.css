@@ -1,0 +1,237 @@
+/* src/components/Nav.css */
+*{
+
+  outline: none;
+}
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 12vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1px solid rgb(104, 104, 104);
+  background-color: rgb(40, 40, 40); /* Transparent background color */
+  color: #fff;
+
+  padding: 0 1rem; /* Add horizontal padding */
+}
+
+.l-n {
+  font-family: 'Montserrat', sans-serif; 
+  color:white;
+  font-weight: 100;
+  margin-left: 1rem; /* Use rem for responsive spacing */
+  font-size: 2.5rem; /* Use rem for font size */
+}
+
+.l-n span{
+  color: crimson; 
+  font-weight: 600;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center; /* Align items vertically center */
+}
+
+.navbar-logo img {
+  width: 3.75rem; /* Adjust width in rem */
+  height: 3.75rem; /* Adjust height in rem */
+  border-radius: 50%;
+  margin-left: 1.5rem; /* Use rem for spacing */
+}
+
+.navbar-menu {
+ 
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap:20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-item {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* Adjust margin in rem */
+  
+}
+.navbar-link, .navbar-btn {
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+/* Hover effect for both links and buttons */
+.navbar-link:hover, .navbar-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: auto; /* Push the hamburger menu to the right */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none; /* Hide menu by default */
+    flex-direction: column; /* Stack items vertically */
+    position:absolute;
+    top: 12vh; /* Adjust based on the height of the navbar */
+    left: 0;
+    width: 85%;
+    background-color: rgba(34, 33, 33, 0.9); /* Darker background for mobile menu */
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+    transition: transform 0.3s ease; /* Smooth transition for menu appearance */
+    transform: translateY(-100%); /* Initially hide menu offscreen */
+    z-index: 1000;
+    margin-left: 1rem;
+  }
+
+  .navbar-menu.active {
+    display: flex; /* Show menu when active */
+    transform: translateY(0); /* Slide down the menu */
+  }
+
+  .navbar-item {
+    margin: 0.5rem 0; /* Adjust margin for mobile items */
+    text-align: center; /* Center align text */
+  }
+
+  .navbar-link {
+    font-size: 1.2rem; /* Increase font size for readability */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger menu icon */
+  }
+}
+
+  /* Add some padding to the content to prevent it from being hidden behind the sticky navbar */
+  
+  /* src/components/Nav.css */
+/* src/components/Nav.css */
+/* 
+.navbar {
+  position: absolute;
+  margin-bottom: 70px;
+  top: 0;
+  left: 0;
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1px solid rgb(104, 104, 104);
+  background-color: rgba(51, 51, 51, 0.5);
+  color: #fff;
+  z-index: 1000;
+  padding: 0 1rem;
+}
+
+.l-n {
+  margin-top: 16px;
+  margin-left: 20px;
+  font-size: x-large;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 40px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-item {
+  margin-right: 15px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.navbar-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+  }
+
+  .navbar-logo {
+    margin-bottom: 1rem;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.9);
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 12vh;
+    left: 0;
+    transition: transform 0.3s ease;
+    transform: translateY(-100%);
+  }
+
+  .navbar-menu.active {
+    display: flex;
+    transform: translateY(0);
+  }
+
+  .navbar-item {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .navbar-link {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: auto;
+  }
+} */

@@ -1,0 +1,227 @@
+/* 
+  .job-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+    position: relative;
+  }
+  
+ 
+  .job-card-header {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+  }
+  
+  .company-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #e8f4fd;
+    margin-right: 10px;
+  }
+  
+  .job-card-actions {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    gap: 12px;
+  }
+  
+  .action-icon {
+    color: #666666;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .action-icon:hover {
+    color: #333333;
+  }
+  
+ 
+  .labels {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .label {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .label.grant {
+    background-color: #f9c74f;
+  }
+  
+  .label.new {
+    background-color: #f94144;
+  }
+  
+  .job-details {
+    flex-grow: 1;
+  }
+  
+  .job-details h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .job-info {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+    font-size: 14px;
+    color: #666666;
+  }
+  
+  .match-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    font-size: 14px;
+  }
+  
+  .match-text {
+    font-weight: 600;
+    color: #43a047;
+  }
+  
+  .skill-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e0f5e9;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #1b5e20;
+    font-weight: 500;
+  }
+  
+  .skill-badge .fa-check {
+    margin-right: 4px;
+    color: #43a047;
+  }
+  
+
+  .job-card-footer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
+  }
+  
+  .salary {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .view-job-btn {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+ 
+  .expand-details {
+    font-size: 14px;
+    color: #666666;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+
+  @media (max-width: 768px) {
+    .job-card {
+      flex-direction: column;
+      padding: 16px;
+    }
+  
+    .job-card-header {
+      margin-right: 0;
+      margin-bottom: 8px;
+    }
+  
+    .company-logo {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .job-details h3 {
+      font-size: 16px;
+    }
+  
+    .job-info {
+      font-size: 12px;
+    }
+  
+    .match-info {
+      font-size: 12px;
+    }
+  
+    .skill-badge, .tag {
+      font-size: 11px;
+      padding: 3px 6px;
+    }
+  
+    .job-card-footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .salary {
+      font-size: 16px;
+    }
+  
+    .view-job-btn {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .job-card {
+      padding: 12px;
+    }
+  
+    .job-details h3 {
+      font-size: 14px;
+    }
+  
+    .job-info {
+      font-size: 11px;
+    }
+  
+    .salary {
+      font-size: 14px;
+    }
+  
+    .view-job-btn {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  }
+   */

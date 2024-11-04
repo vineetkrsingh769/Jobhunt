@@ -1,0 +1,202 @@
+.a {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row; /* Ensure row layout on larger screens */
+}
+
+.a-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  margin-top: 40px;
+}
+
+.a-right {
+  flex: 1;
+  margin-right: 17vh;
+}
+
+.a-card.bg {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: #333;
+}
+
+.a-card {
+  width: 60%;
+  height: 70vh;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 6px 10px 16px rgba(0, 0, 0, 0.5);
+}
+
+.a-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.a-card:hover,
+.a-card:hover .a-img {
+  transform: scale(1.05);
+  box-shadow: 6px 10px 16px rgba(0, 0, 0, 1);
+}
+
+.a-award-img {
+  width: 120px;
+  height: 120px;
+}
+
+.a-title {
+  font-weight: 400;
+  cursor: pointer;
+  color: black;
+  margin-right: 50%;
+  margin-bottom: -3px;
+}
+
+.a-title:hover {
+  transform: scale(1.03);
+  transition: transform 0.5s ease;
+}
+
+.a-sub {
+  margin: 20px 0px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.a-desc {
+  margin-top: 30px;
+  font-weight: 350;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+}
+
+.a-award {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.a-award-texts {
+  width: 70%;
+}
+
+.a-award-title {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.btn2 {
+  background-color: rgb(255, 132, 0); /* Button background color */
+  border: none;
+  color: white; /* White text */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  width: auto;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px; /* Rounded corners */
+  transition: background-color 0.3s ease;
+}
+
+.btn2:hover {
+  background-color: orange; /* Button hover color */
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .a {
+    flex-direction: column; /* Stack vertically on medium screens */
+    height: auto; /* Allow height to adjust */
+    margin-top: 20px; /* Reduce margin */
+  }
+
+  .a-left,
+  .a-right {
+    width: 100%; /* Full width on smaller screens */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .a-card {
+    width: 90%; /* Adjust card width */
+    height: auto; /* Auto height for responsiveness */
+    margin: 0 auto; /* Center card */
+  }
+
+  .a-title {
+    margin-right: 0; /* Reset margin */
+    text-align: center; /* Center title */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .a-left {
+    margin-top: 20px; /* Reduce margin for small screens */
+  }
+
+  .a-award {
+    margin-top: 30px; /* Adjust award margin */
+    flex-direction: column; /* Stack award items */
+  }
+
+  .a-card {
+    height: auto; /* Allow card height to adjust */
+  }
+
+  .a-title,
+  .a-sub,
+  .a-desc {
+    font-size: 14px; /* Slightly smaller font size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .a {
+    text-align: center; /* Center text on very small screens */
+    margin-top: 30px; /* Further reduce margin */
+  }
+
+  .a-card {
+    width: 95%; /* Full width with slight padding */
+    height: auto; /* Auto height */
+  }
+.a-right{
+  padding: 10px;
+}
+  .a-award-img {
+    width: 100px; /* Adjust award image size */
+    height: 100px; /* Adjust award image size */
+  }
+
+  .a-title {
+    font-size: 18px; /* Adjust title size */
+  }
+
+  .a-sub {
+    font-size: 12px; /* Adjust subtitle size */
+  }
+
+  .a-desc {
+    font-size: 11px; /* Adjust description size */
+  }
+
+  .a-award-title {
+    font-size: 14px; /* Adjust award title size */
+  }
+}
